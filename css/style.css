@@ -1,0 +1,144 @@
+/* Chris Rouman has style */
+@charset "utf-8";
+
+html{
+	font-size:62.5%;
+}
+
+body{
+	/*background-color:#F1F7FE;*/
+	background-color:#E4DDCF;
+	font-family:"Open Sans", sans-serif;
+	font-size:14px;
+	padding-top: 50px;
+}
+
+#parent{
+	opacity:0;
+}
+
+/***
+NAVBAR
+***/
+.navbar{
+	background-color: #555;
+	box-shadow: 0px 1px 5px #000;
+}
+.navbar-inverse .navbar-nav>.active>a{
+	background-color:#777;
+}
+.navbar-inverse .navbar-nav>.active>a:hover{
+	background-color:#333;
+}
+
+
+/*main content*/
+.main{	
+	padding-top:15px;
+	padding-left:55px; /*offset for closed filter*/
+}
+
+/*do stuff when at smaller sizes*/
+@media (max-width: 1000px) {
+	/*reset the left padding*/
+	.main{	
+		padding-left:15px !important;
+	}
+}
+
+/***
+RIBBON STYLE
+***/
+
+.module{
+	background-color:#99D5F5;
+	border-radius:4px;
+	/*margin: -15px;*/
+	margin-bottom: 15px;
+	padding: 10px;
+	box-shadow: #79A9C2 0px 3px 0px;
+	color:#FFF;
+	text-align:right;
+	width:100%;
+}
+
+.ribbon div{
+	/*border-left:1px solid #FFF;*/
+}
+
+.ribbon-label{
+	font-size:1.8rem;
+  font-weight:300;
+}
+
+.ribbon-value{
+	display:block;
+	font-size:2.5rem;
+	font-weight:300;
+}
+
+.date{
+	background: #99D5F5 url(../images/module-calendar.png) left bottom no-repeat;
+}
+
+.volume{
+	background: #99D5F5 url(../images/module-volume.png) left bottom no-repeat;
+}
+
+.revneue{
+	background: #99D5F5 url(../images/module-revenue.png) left bottom no-repeat;
+}
+
+.variance{
+	background: #99D5F5 url(../images/module-variance.png) left bottom no-repeat;
+}
+
+
+/*modify some things at smaller sizes*/
+@media (max-width: 1000px) {
+	/*we don't need no stinkin' borders*/
+	.ribbon div{	
+		border-left:0 !important;
+	}
+	/*center the date too*/
+	.ribbon div:first-child{
+		border-bottom:1px solid #FFF !important;
+		margin-bottom:5px;
+		padding-bottom:5px;
+		/*text-align:center !important;*/
+	}
+	.ribbon .date{
+		font-size:2.5rem;
+		padding-top:0 !important;
+		text-align:center;
+	}
+}
+
+@media (min-width: 1000px) {
+  .ribbon .date{
+			font-size:1.8rem;
+		/*padding-top:0 !important;*/
+	}
+}
+
+/***
+DASH PANEL STYLE 
+***/
+
+.dash-row div:first-child{
+	padding-right:0 !important;
+}
+
+@media (max-width: 1005px) {
+	.dash-row div:first-child{
+		padding-right:15px !important;
+	}
+}
+
+.dash-panel{
+	background-color:#FFF;
+	border:1px solid #DDD;
+	margin-bottom:15px;
+	padding:15px;
+	height:300px;
+}
