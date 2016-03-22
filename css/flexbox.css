@@ -48,12 +48,12 @@
   box-shadow: #bbb 0px 3px 0px;
 }
 
-:not(.filter-content .panel-default)::after{content:'\00a0';  
+/*:not(.filter-content .panel-default)::after{content:'\00a0';  
   display:block;  
   margin-top:1em; 
   height:0; 
   visibility:hidden
-}
+}*/
 
 
 
