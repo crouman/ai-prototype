@@ -39,4 +39,13 @@ window.onload = function(){
 		$("#line-chart").attr("width", newLineWidth);
 		$("#line-chart").css("width", newLineWidth);
 	})
+
+	//PIE CHART
+	var pieChart = document.getElementById("pie-chart").getContext("2d");	
+	window.myPie = new Chart(pieChart).Pie(pieChartData, {
+		responsive: true,
+		legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>"
+	});
+	myPie.generateLegend();
+
 }

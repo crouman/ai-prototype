@@ -59,12 +59,12 @@ FILTER STYLE
 	font-weight: 900;
 }
 
-.closed{	
+.filter-container .closed{	
 	width:40px;
 	z-index:1000; /*apparently, this is needed*/
 }
 
-.open{
+.filter-container .open{
 	padding:15px;
 	padding-top:0;
 }
@@ -85,19 +85,19 @@ FILTER STYLE
 .filter-btn:hover{
 	background:#777;
 }
-.closed .filter-label label, .open .filter-label label{
+.filter-container .closed .filter-label label, .filter-container .open .filter-label label{
 	cursor:pointer;
 	text-transform: uppercase;
 	font-family:"Open Sans";
 	font-weight:700;
 }
 
-.closed label{
+.filter-container .closed label{
 	padding:10px;
 	padding-bottom:4px;
 }
 
-.closed .filter-label{
+.filter-container .closed .filter-label{
 	/*this is a better and more efficient way of displaying the label rotated 
 	  but needs to be tested cross-browser and for back compatability */
   /* Safari, Chrome*/
@@ -112,11 +112,11 @@ FILTER STYLE
 	left: -17px;
 }
 
-.closed .filter-label:hover{
+.filter-container .closed .filter-label:hover{
 	background:#444;
 }
 
-.open .filter-label{
+.filter-container .open .filter-label{
 	display:block;
 	margin-bottom:2px;
 	padding-left:45px;

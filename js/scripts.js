@@ -1,12 +1,7 @@
-$(document).ready(function(){
-	
-	
-	
+$(document).ready(function(){	
 	/***
 	FILTER HEIGHT 
-	***/
-	
-	//get window height
+	***/		
 	var winHeight;
 	var filterPad = 10;
 	var topPad = 50;
@@ -37,8 +32,7 @@ $(document).ready(function(){
 	
 	/***
 	FILTER WIDTH 
-	***/
-	
+	***/	
 	function getFilterWidth(filterState){
 		//get filter container
 		var filter = $(".filter-container");
