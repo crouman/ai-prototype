@@ -147,11 +147,25 @@ DASH PANEL STYLE
 	display: inline-block;
 	list-style-type: none;
 	margin: 0;
+	margin-bottom: 10px;
 	padding: 0;
 }
-.chart-legend .leg-north{
-	background-color: red
+.chart-legend li{
+	border-right: 2px solid #FFF;
+	color: #FFF;
+	float: left;
+	font-weight: 700;
+	padding: 3px 10px;
 }
-.chart-legend .leg-north:after{
-	content: "North"
+.chart-legend .leg-north{
+	background-color: #F7464A
+}
+.chart-legend .leg-south{
+	background-color: #FDB45C
+}
+.chart-legend .leg-east{
+	background-color: #46BFBD
+}
+.chart-legend .leg-west{
+	background-color: #4197F2
 }

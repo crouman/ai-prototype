@@ -41,11 +41,21 @@ window.onload = function(){
 	})
 
 	//PIE CHART
+	var pieHeight = $("#pie-chart").parents(".panel").height() - 30;
+	var pieWidth = $("#pie-chart").parents(".panel").width() - 30;
+
 	var pieChart = document.getElementById("pie-chart").getContext("2d");	
 	window.myPie = new Chart(pieChart).Pie(pieChartData, {
-		responsive: true,
-		legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>"
+		responsive: true	
 	});
 	myPie.generateLegend();
+
+	$(window).resize(function(){			
+		var winWidth = $(window).innerWidth();
+		var newPieWidth = lineWidth/winWidth;
+
+		$("#pie-chart").attr("width", newPieWidth);
+		$("#pie-chart").css("width", newPieWidth);
+	})
 
 }
