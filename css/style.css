@@ -169,3 +169,22 @@ DASH PANEL STYLE
 .chart-legend .leg-west{
 	background-color: #4197F2
 }
+
+.notifications li:hover{
+	background-color: #EAF1F5;
+	/*color: #FFF;*/
+	cursor: pointer;
+}
+.notifications .red{
+	color: #C30000;
+}
+.notifications .green{
+	color: #37911b;
+}
+
+.noticeDate{
+	color: #AAA;
+	font-weight: 700;
+	font-size: 1.1rem;
+	white-space: nowrap;
+}
